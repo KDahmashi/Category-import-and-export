@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0">
+	<portlet>
+		<portlet-name>category-import-export-utility</portlet-name>
+		<display-name>Category Import Export Utility</display-name>
+		<portlet-class>com.liferay.category.portlet.controller.CategoryImportExportController</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/view.jsp</value>
+		</init-param>
+		<init-param>
+			<name>help-template</name>
+			<value>/html/help.jsp</value>
+		</init-param>
+		<init-param>
+			<name>print-template</name>
+			<value>/html/print.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+			<portlet-mode>help</portlet-mode>
+			<portlet-mode>print</portlet-mode>
+		</supports>
+		<resource-bundle>content/Language</resource-bundle>
+		<portlet-info>
+			<title>Category Import Export Utility</title>
+			<short-title>Category Import Export Utility</short-title>
+			<keywords>Category Import Export Utility</keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+</portlet-app>
